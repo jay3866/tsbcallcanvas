@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Box, Typography, Paper } from '@mui/material';
+import { Container, Box, Typography } from '@mui/material';
 import LoginForm from './LoginForm';
 import SignUpForm from './SignUpForm';
 

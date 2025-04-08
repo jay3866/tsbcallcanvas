@@ -15,11 +15,9 @@ import {
   IconButton,
   Backdrop,
   Fade,
-  Tooltip,
   Grid,
   Card,
   CardContent,
-  CardMedia,
   Divider
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';

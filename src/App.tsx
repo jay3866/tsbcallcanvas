@@ -11,9 +11,6 @@ import ReactFlow, {
   Connection,
   NodeTypes,
   BackgroundVariant,
-  OnConnect,
-  NodeMouseHandler,
-  Panel,
 } from 'reactflow';
 import { useAuth } from './supabase/AuthContext';
 import 'reactflow/dist/style.css';
@@ -41,8 +38,8 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import MessageIcon from '@mui/icons-material/Message';
-import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
-import SettingsIcon from '@mui/icons-material/Settings';
+// import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
+// import SettingsIcon from '@mui/icons-material/Settings';
 import SaveIcon from '@mui/icons-material/Save';
 import DeleteIcon from '@mui/icons-material/Delete';
 import CodeIcon from '@mui/icons-material/Code';
@@ -51,7 +48,7 @@ import DialpadIcon from '@mui/icons-material/Dialpad';
 import BuildIcon from '@mui/icons-material/Build';
 import AddIcon from '@mui/icons-material/Add';
 import PublishIcon from '@mui/icons-material/Publish';
-import InfoIcon from '@mui/icons-material/Info';
+// import InfoIcon from '@mui/icons-material/Info';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import StopIcon from '@mui/icons-material/Stop';
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
@@ -471,14 +468,14 @@ function App() {
   };
 
   // Close password dialog
-  const closePasswordDialog = () => {
-    setPasswordDialogOpen(false);
-  };
+  // const closePasswordDialog = () => {
+  //   setPasswordDialogOpen(false);
+  // };
 
   // Open export dialog after successful password entry
-  const openExportDialog = () => {
-    setExportDialogOpen(true);
-  };
+  // const openExportDialog = () => {
+  //   setExportDialogOpen(true);
+  // };
   
   // Close export dialog
   const closeExportDialog = () => {

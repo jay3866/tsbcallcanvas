@@ -6,7 +6,6 @@ import {
   Button, 
   TextField,
   Fade,
-  Grow,
   Zoom,
   CircularProgress,
   useTheme
@@ -44,7 +43,7 @@ const AreaCodeSelector: React.FC<AreaCodeSelectorProps> = ({ onComplete }) => {
   const [digit2, setDigit2] = useState<string>('');
   const [digit3, setDigit3] = useState<string>('');
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
-  const [isSuccess, setIsSuccess] = useState<boolean>(false);
+  const [isSuccess] = useState<boolean>(false);
   const [phoneNumber, setPhoneNumber] = useState<string>('');
   const [selectedPopularCode, setSelectedPopularCode] = useState<string | null>(null);
 

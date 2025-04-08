@@ -17,9 +17,7 @@ import {
   Select,
   FormControl,
   InputLabel,
-  Switch,
   FormControlLabel,
-  Chip,
   Grid,
   Radio,
   RadioGroup
@@ -27,13 +25,7 @@ import {
 import CloseIcon from '@mui/icons-material/Close';
 import AddIcon from '@mui/icons-material/Add';
 import DeleteIcon from '@mui/icons-material/Delete';
-import CodeIcon from '@mui/icons-material/Code';
-import CallIcon from '@mui/icons-material/Call';
-import DialpadIcon from '@mui/icons-material/Dialpad';
-import AccountTreeIcon from '@mui/icons-material/AccountTree';
-import StopIcon from '@mui/icons-material/Stop';
-import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
-import MessageIcon from '@mui/icons-material/Message';
+// Removed unused icon imports
 
 interface NodeConfigPanelProps {
   node: Node;
@@ -173,16 +165,16 @@ const NodeConfigPanel: React.FC<NodeConfigPanelProps> = ({
     };
     
     // Update node data based on node type
-    let updatedData = {};
-    
     if (node.type === 'options') {
-      updatedData = { label, options };
+      newData.options = options;
     } else if (node.type === 'dataRequest') {
-      updatedData = { label, dataFields };
+      newData.dataFields = dataFields;
     } else if (node.type === 'conversation') {
-      updatedData = { label, message, transitions };
+      newData.transitions = transitions;
     } else if (node.type === 'function') {
-      updatedData = { label, systemName, notes, systemType };
+      newData.systemName = systemName;
+      newData.notes = notes;
+      newData.systemType = systemType;
     } else if (node.type === 'callTransfer') {
       newData.transferType = transferType;
       newData.destination = destination;
