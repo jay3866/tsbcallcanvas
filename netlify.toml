@@ -1,0 +1,7 @@
+[build]
+  command = "CI=false npm run build"
+  publish = "build"
+
+[build.environment]
+  REACT_APP_SUPABASE_URL = "https://dnlpkakuyhflbrvwjpfs.supabase.co"
+  REACT_APP_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRubHBrYWt1eWhmbGJydndqcGZzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQwOTE2ODMsImV4cCI6MjA1OTY2NzY4M30.XrnGkaAhFn5cmfuIVAt1eGPqtjaX04BWUM4RmzaJGuo"
